@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ben/CLionProjects/project/ConnectCommand.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/ConnectCommand.cpp.o"
   "/home/ben/CLionProjects/project/DefineVarCommand.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/DefineVarCommand.cpp.o"
   "/home/ben/CLionProjects/project/Div.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Div.cpp.o"
+  "/home/ben/CLionProjects/project/Lexer.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Lexer.cpp.o"
   "/home/ben/CLionProjects/project/LoopCommand.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/LoopCommand.cpp.o"
   "/home/ben/CLionProjects/project/Minus.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Minus.cpp.o"
   "/home/ben/CLionProjects/project/Mul.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Mul.cpp.o"

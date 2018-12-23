@@ -120,6 +120,12 @@
 		<Unit filename="/home/ben/CLionProjects/project/Expression.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/Lexer.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/Lexer.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/ben/CLionProjects/project/LoopCommand.cpp">
 			<Option target="project"/>
 		</Unit>

@@ -12,7 +12,6 @@ int m_client_socket;
 public:
     Client(const char *server_IP, int server_port);
     void connectToServer();
-    int sendUpdates(string var, double value);
 };
 
 

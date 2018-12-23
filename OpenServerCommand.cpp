@@ -15,6 +15,8 @@ void OpenServerCommand::execute(vector<string> line)
     setPortAndFreq(line[1], line[2]);
     if (validator.validateNumbers(m_port) && validator.validateNumbers(m_freq)) {
         // port and freq are valid, need to open the server port
+        Server server(stod(m_port));
+        server.start();
         thread t1(&OpenServerCommand::openServer, this);
     } else {
         perror("Syntax Error: Port or Frequency received invalid input");
@@ -23,6 +25,5 @@ void OpenServerCommand::execute(vector<string> line)
 }
 void OpenServerCommand::openServer()
 {
-    Server server(stod(m_port));
-    server.start();
+
 }

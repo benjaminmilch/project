@@ -8,6 +8,7 @@ CMakeFiles/project.dir/BinaryExpression.cpp.o: ../Expression.h
 CMakeFiles/project.dir/Client.cpp.o: ../Client.cpp
 CMakeFiles/project.dir/Client.cpp.o: ../Client.h
 
+CMakeFiles/project.dir/ConnectCommand.cpp.o: ../Client.h
 CMakeFiles/project.dir/ConnectCommand.cpp.o: ../Command.h
 CMakeFiles/project.dir/ConnectCommand.cpp.o: ../ConnectCommand.cpp
 CMakeFiles/project.dir/ConnectCommand.cpp.o: ../ConnectCommand.h
@@ -43,6 +44,7 @@ CMakeFiles/project.dir/Number.cpp.o: ../Number.h
 CMakeFiles/project.dir/OpenServerCommand.cpp.o: ../Command.h
 CMakeFiles/project.dir/OpenServerCommand.cpp.o: ../OpenServerCommand.cpp
 CMakeFiles/project.dir/OpenServerCommand.cpp.o: ../OpenServerCommand.h
+CMakeFiles/project.dir/OpenServerCommand.cpp.o: ../Server.h
 CMakeFiles/project.dir/OpenServerCommand.cpp.o: ../ValidateNumbers.h
 
 CMakeFiles/project.dir/Parser.cpp.o: ../Command.h

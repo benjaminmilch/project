@@ -258,6 +258,33 @@ Div.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Div.cpp.s
 .PHONY : Div.cpp.s
 
+Lexer.o: Lexer.cpp.o
+
+.PHONY : Lexer.o
+
+# target to build an object file
+Lexer.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Lexer.cpp.o
+.PHONY : Lexer.cpp.o
+
+Lexer.i: Lexer.cpp.i
+
+.PHONY : Lexer.i
+
+# target to preprocess a source file
+Lexer.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Lexer.cpp.i
+.PHONY : Lexer.cpp.i
+
+Lexer.s: Lexer.cpp.s
+
+.PHONY : Lexer.s
+
+# target to generate assembly for a file
+Lexer.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Lexer.cpp.s
+.PHONY : Lexer.cpp.s
+
 LoopCommand.o: LoopCommand.cpp.o
 
 .PHONY : LoopCommand.o
@@ -552,6 +579,9 @@ help:
 	@echo "... Div.o"
 	@echo "... Div.i"
 	@echo "... Div.s"
+	@echo "... Lexer.o"
+	@echo "... Lexer.i"
+	@echo "... Lexer.s"
 	@echo "... LoopCommand.o"
 	@echo "... LoopCommand.i"
 	@echo "... LoopCommand.s"

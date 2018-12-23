@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/Number.cpp.o"
   "CMakeFiles/project.dir/Client.cpp.o"
   "CMakeFiles/project.dir/Server.cpp.o"
+  "CMakeFiles/project.dir/Lexer.cpp.o"
   "project.pdb"
   "project"
 )
