@@ -162,6 +162,12 @@
 		<Unit filename="/home/ben/CLionProjects/project/Plus.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/Server.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/Server.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/ben/CLionProjects/project/ValidateNumbers.cpp">
 			<Option target="project"/>
 		</Unit>

@@ -1,6 +1,3 @@
-//
-// Created by adiel on 23/12/18.
-//
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +11,7 @@
 
 #include "Server.h"
 
-Server::Server(int port) {
+Server::Server(double port) {
     this->port = port;
     this->sockfd = 0;
 }
@@ -71,19 +68,3 @@ void Server::start() {
         exit(1);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -5,9 +5,9 @@
 #include <list>
 
 class LoopCommand {
-    std::list<Command> m_commands;
+    std::list<Command *> m_commands;
 public:
-    void addCommand(Command command);
+    void addCommand(Command *command);
     void execute();
 };
 

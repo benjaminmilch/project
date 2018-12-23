@@ -7,11 +7,12 @@
 using namespace std;
 
 class ConnectCommand : public Command {
-    std::string m_socket, m_port;
+    string m_socket, m_port;
 public:
     ConnectCommand();
     void setSocketAndPort(string socket, string port);
-    void execute();
+    void execute(vector<string> line) override;
+    void openClient();
 };
 
 

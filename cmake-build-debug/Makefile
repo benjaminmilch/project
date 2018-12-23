@@ -447,6 +447,33 @@ Plus.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Plus.cpp.s
 .PHONY : Plus.cpp.s
 
+Server.o: Server.cpp.o
+
+.PHONY : Server.o
+
+# target to build an object file
+Server.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Server.cpp.o
+.PHONY : Server.cpp.o
+
+Server.i: Server.cpp.i
+
+.PHONY : Server.i
+
+# target to preprocess a source file
+Server.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Server.cpp.i
+.PHONY : Server.cpp.i
+
+Server.s: Server.cpp.s
+
+.PHONY : Server.s
+
+# target to generate assembly for a file
+Server.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Server.cpp.s
+.PHONY : Server.cpp.s
+
 ValidateNumbers.o: ValidateNumbers.cpp.o
 
 .PHONY : ValidateNumbers.o
@@ -546,6 +573,9 @@ help:
 	@echo "... Plus.o"
 	@echo "... Plus.i"
 	@echo "... Plus.s"
+	@echo "... Server.o"
+	@echo "... Server.i"
+	@echo "... Server.s"
 	@echo "... ValidateNumbers.o"
 	@echo "... ValidateNumbers.i"
 	@echo "... ValidateNumbers.s"

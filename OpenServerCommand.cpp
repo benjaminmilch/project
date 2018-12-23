@@ -2,11 +2,7 @@
 #include "ValidateNumbers.h"
 #include <iostream>
 #include <thread>
-#include <sys/types.h>
-#include <unistd.h>
-#include <sys/socket.h>
-#include <netdb.h>
-#include <arpa/inet.h>
+#include "Server.h"
 
 void OpenServerCommand::setPortAndFreq(string port, string freq)
 {
@@ -27,9 +23,6 @@ void OpenServerCommand::execute(vector<string> line)
 }
 void OpenServerCommand::openServer()
 {
-    int server = socket(AF_INET, SOCK_STREAM, 0);
-    if (server < 0) {
-        perror("ERROR opening socket");
-        exit(1);
-    }
+    Server server(stod(m_port));
+    server.start();
 }

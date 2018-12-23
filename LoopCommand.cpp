@@ -1,6 +1,6 @@
 #include "LoopCommand.h"
 
-void LoopCommand::addCommand(Command command)
+void LoopCommand::addCommand(Command *command)
 {
     m_commands.push_back(command);
 }
