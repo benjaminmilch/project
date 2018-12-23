@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/Minus.cpp.o"
   "CMakeFiles/project.dir/Mul.cpp.o"
   "CMakeFiles/project.dir/Number.cpp.o"
+  "CMakeFiles/project.dir/Client.cpp.o"
   "project.pdb"
   "project"
 )

@@ -90,6 +90,12 @@
 		<Unit filename="/home/ben/CLionProjects/project/BinaryExpression.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/Client.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/Client.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/ben/CLionProjects/project/Command.h">
 			<Option target="project"/>
 		</Unit>

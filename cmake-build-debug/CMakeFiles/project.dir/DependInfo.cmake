@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ben/CLionProjects/project/BinaryExpression.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/BinaryExpression.cpp.o"
+  "/home/ben/CLionProjects/project/Client.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Client.cpp.o"
   "/home/ben/CLionProjects/project/ConnectCommand.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/ConnectCommand.cpp.o"
   "/home/ben/CLionProjects/project/DefineVarCommand.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/DefineVarCommand.cpp.o"
   "/home/ben/CLionProjects/project/Div.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Div.cpp.o"
