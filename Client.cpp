@@ -41,13 +41,10 @@ void Client::connectToServer()
         exit(1);
     }
 }
-int main(int argc, char *argv[]) {
-    int sockfd, portno, n;
-    struct sockaddr_in serv_addr;
-    struct hostent *server;
-
+int Client::sendUpdates(string var, double value)
+{
     char buffer[256];
-
+    int n;
     /* Now ask for a message from the user, this message
        * will be read by server
     */
@@ -57,7 +54,7 @@ int main(int argc, char *argv[]) {
     fgets(buffer,255,stdin);
 
     /* Send message to the server */
-    n = write(sockfd, buffer, strlen(buffer));
+    n = write(m_client_socket, buffer, strlen(buffer));
 
     if (n < 0) {
         perror("ERROR writing to socket");
@@ -66,7 +63,7 @@ int main(int argc, char *argv[]) {
 
     /* Now read server response */
     bzero(buffer,256);
-    n = read(sockfd, buffer, 255);
+    n = read(m_client_socket, buffer, 255);
 
     if (n < 0) {
         perror("ERROR reading from socket");
