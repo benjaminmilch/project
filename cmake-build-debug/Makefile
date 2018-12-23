@@ -528,6 +528,33 @@ ValidateNumbers.cpp.s:
 	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/ValidateNumbers.cpp.s
 .PHONY : ValidateNumbers.cpp.s
 
+VarTable.o: VarTable.cpp.o
+
+.PHONY : VarTable.o
+
+# target to build an object file
+VarTable.cpp.o:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/VarTable.cpp.o
+.PHONY : VarTable.cpp.o
+
+VarTable.i: VarTable.cpp.i
+
+.PHONY : VarTable.i
+
+# target to preprocess a source file
+VarTable.cpp.i:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/VarTable.cpp.i
+.PHONY : VarTable.cpp.i
+
+VarTable.s: VarTable.cpp.s
+
+.PHONY : VarTable.s
+
+# target to generate assembly for a file
+VarTable.cpp.s:
+	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/VarTable.cpp.s
+.PHONY : VarTable.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -609,6 +636,9 @@ help:
 	@echo "... ValidateNumbers.o"
 	@echo "... ValidateNumbers.i"
 	@echo "... ValidateNumbers.s"
+	@echo "... VarTable.o"
+	@echo "... VarTable.i"
+	@echo "... VarTable.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

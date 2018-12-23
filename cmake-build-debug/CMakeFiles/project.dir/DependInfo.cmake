@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ben/CLionProjects/project/Plus.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Plus.cpp.o"
   "/home/ben/CLionProjects/project/Server.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/Server.cpp.o"
   "/home/ben/CLionProjects/project/ValidateNumbers.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/ValidateNumbers.cpp.o"
+  "/home/ben/CLionProjects/project/VarTable.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/VarTable.cpp.o"
   "/home/ben/CLionProjects/project/main.cpp" "/home/ben/CLionProjects/project/cmake-build-debug/CMakeFiles/project.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

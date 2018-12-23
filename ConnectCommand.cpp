@@ -3,15 +3,14 @@
 #include <iostream>
 #include "Client.h"
 
-void ConnectCommand::setSocketAndPort(string socket, string port)
+ConnectCommand::ConnectCommand(vector<string> line)
 {
-    m_socket.append(socket);
-    m_port.append(port);
+    m_socket.append(line[1]);
+    m_port.append(line[2]);
 }
-void ConnectCommand::execute(vector<string> line)
+void ConnectCommand::execute()
 {
     ValidateNumbers validator;
-    setSocketAndPort(line[1], line[2]);
     if (validator.validateNumbers(m_port) && validator.validateSocket(m_socket)) {
         // port and socket are valid, need to connect client from socket to port
         openClient();
@@ -21,6 +20,5 @@ void ConnectCommand::execute(vector<string> line)
 }
 void ConnectCommand::openClient()
 {
-    Client client(m_socket, stoi(m_port));
-    client.connectToServer();
+
 }

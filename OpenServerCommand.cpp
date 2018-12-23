@@ -4,15 +4,14 @@
 #include <thread>
 #include "Server.h"
 
-void OpenServerCommand::setPortAndFreq(string port, string freq)
+OpenServerCommand::OpenServerCommand(vector<string> line)
 {
-    m_port.append(port);
-    m_freq.append(freq);
+    m_port.append(line[1]);
+    m_freq.append(line[2]);
 }
-void OpenServerCommand::execute(vector<string> line)
+void OpenServerCommand::execute()
 {
     ValidateNumbers validator;
-    setPortAndFreq(line[1], line[2]);
     if (validator.validateNumbers(m_port) && validator.validateNumbers(m_freq)) {
         // port and freq are valid, need to open the server port
         Server server(stod(m_port));

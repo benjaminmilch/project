@@ -180,6 +180,12 @@
 		<Unit filename="/home/ben/CLionProjects/project/ValidateNumbers.h">
 			<Option target="project"/>
 		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/VarTable.cpp">
+			<Option target="project"/>
+		</Unit>
+		<Unit filename="/home/ben/CLionProjects/project/VarTable.h">
+			<Option target="project"/>
+		</Unit>
 		<Unit filename="/home/ben/CLionProjects/project/main.cpp">
 			<Option target="project"/>
 		</Unit>

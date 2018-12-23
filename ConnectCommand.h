@@ -9,9 +9,8 @@ using namespace std;
 class ConnectCommand : public Command {
     string m_socket, m_port;
 public:
-    ConnectCommand();
-    void setSocketAndPort(string socket, string port);
-    void execute(vector<string> line) override;
+    ConnectCommand(vector<string> line);
+    void execute() override;
     void openClient();
 };
 
