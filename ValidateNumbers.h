@@ -6,7 +6,7 @@
 class ValidateNumbers {
 public:
     bool validateNumbers(std::string number);
-    bool validateSocket(std::string socket);
+    bool validateIP(std::string IP);
 };
 
 

@@ -4,11 +4,13 @@
 #include "Command.h"
 #include <list>
 
-class LoopCommand {
-    std::list<Command *> m_commands;
+class LoopCommand : public Command{
+    std::list<Command> m_commands;
+    bool m_condition;
 public:
-    void addCommand(Command *command);
-    void execute();
+    LoopCommand();
+    void execute(vector<string> line) override;
+    void store(vector<string> line) override;
 };
 
 

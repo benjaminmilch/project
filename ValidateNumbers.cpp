@@ -9,9 +9,9 @@ bool ValidateNumbers::validateNumbers(std::string number)
     }
     return true;
 }
-bool ValidateNumbers::validateSocket(std::string socket)
+bool ValidateNumbers::validateIP(std::string IP)
 {
-    for (char digit : socket) {
+    for (char digit : IP) {
         if ((digit < 48 || digit > 57) && digit != 46) {
             return false;
         }

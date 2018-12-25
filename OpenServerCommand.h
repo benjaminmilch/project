@@ -9,8 +9,8 @@ using namespace std;
 class OpenServerCommand : public Command {
     string m_port, m_freq;
 public:
-    OpenServerCommand(vector<string> line);
-    void execute() override;
+    void execute(vector<string> line) override;
+    void store(vector<string> line) override;
     void openServer();
 };
 
