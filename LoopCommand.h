@@ -3,13 +3,15 @@
 
 #include "Command.h"
 #include <list>
+#include "ConditionCommand.h"
+
+using namespace std;
 
 class LoopCommand : public Command{
-    std::list<Command> m_commands;
-    bool m_condition;
+    list<Command> m_commands;
+    ConditionCommand m_condition;
 public:
-    LoopCommand();
-    void execute(vector<string> line) override;
+    void execute() override;
     void store(vector<string> line) override;
 };
 

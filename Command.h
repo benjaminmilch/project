@@ -8,7 +8,7 @@ using namespace std;
 
 class Command {
 public:
-    virtual void execute(vector<string> line) = 0;
+    virtual void execute() = 0;
     virtual void store(vector<string>line) = 0;
 };
 
