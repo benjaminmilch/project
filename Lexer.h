@@ -8,9 +8,11 @@
 using namespace std;
 
 class Lexer {
-private:
+public:
     vector<string> splitter(string text,const char c);
     vector<string> lexer(string line);
+    string processLine(const string line);
+    bool isIn(char c, string op);
 };
 
 #endif //PROJECT_LEXER_H
