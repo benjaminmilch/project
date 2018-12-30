@@ -7,10 +7,16 @@
 
 using namespace std;
 
+/****************************************************************
+* Class Name: Number                                            *
+* Constructor: String                                           *
+* Class Functionality: Returns the double value of the string   *
+*   number received.                                            *
+****************************************************************/
 class Number : public Expression{
     double m_value;
 public:
-    Number(string val);
+    explicit Number(string val);
     double calculate() override;
 };
 

@@ -6,10 +6,15 @@
 
 using namespace std;
 
+/****************************************************************
+* Class Name: Command                                           *
+* Constructor: No constructor (interface)                       *
+* Class Functionality: Command Interface with single method     *
+*   execute().                                                  *
+****************************************************************/
 class Command {
 public:
-    virtual void execute() = 0;
-    virtual void store(vector<string>line) = 0;
+    virtual int execute(vector<string> script, unsigned long index) = 0;
 };
 
 #endif // COMMAND_H

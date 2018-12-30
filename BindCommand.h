@@ -1,16 +1,20 @@
-//
-// Created by ben on 12/25/18.
-//
-
 #ifndef PROJECT_BINDCOMMAND_H
 #define PROJECT_BINDCOMMAND_H
 
 #include "Command.h"
+#include "GlobalData.h"
 
+/****************************************************************
+* Class Name: BindCommand                                       *
+* Constructor: Pointer to GlobalData                            *
+* Class Functionality: This class updates the address table     *
+*   with the new variable defined in the line.                  *
+****************************************************************/
 class BindCommand : public Command {
+    GlobalData *m_data; // member
 public:
-    void execute() override;
-    void store(vector<string> line) override;
+    explicit BindCommand(GlobalData *data); // constructor
+    int execute(vector<string> script, unsigned long index) override;
 };
 
 

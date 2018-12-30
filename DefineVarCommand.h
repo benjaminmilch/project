@@ -3,16 +3,20 @@
 
 #include "Command.h"
 #include <map>
-#include "SymbolTable.h"
+#include "GlobalData.h"
 
-using namespace std;
-
+/****************************************************************
+* Class Name: DefineVarCommand                                  *
+* Constructor: Pointer to GlobalData                            *
+* Class Functionality: This class defines new variables in the  *
+*   program. It uses either the EqualsCommand or BindCommand    *
+*   classes accordingly.
+****************************************************************/
 class DefineVarCommand : public Command{
-    SymbolTable* m_symbol_table;
-    vector<string> line;
+    GlobalData *m_data; // member
 public:
-    DefineVarCommand(SymbolTable* table);
-    void execute(vector<string> line);
+    explicit DefineVarCommand(GlobalData *data); // constructor
+    int execute(vector<string> script, unsigned long index) override;
 };
 
 

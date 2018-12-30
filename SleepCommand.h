@@ -6,11 +6,18 @@
 #define PROJECT_SLEEPCOMMAND_H
 
 #include "Command.h"
+#include "GlobalData.h"
 
+/****************************************************************
+* Class Name: SleepCommand                                      *
+* Constructor: Default constructor                              *
+* Class Functionality: This class causes the program to sleep   *
+*   for the inputted amount of time in milliseconds.            *
+****************************************************************/
 class SleepCommand : public Command {
+    GlobalData *m_data;
 public:
-    void execute() override;
-    void store(vector<string> line) override;
+    int execute(vector<string> script, unsigned long index) override;
 };
 
 

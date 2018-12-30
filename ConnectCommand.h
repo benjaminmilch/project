@@ -2,16 +2,21 @@
 #define PROJECT_CONNECTCOMMAND_H
 
 #include "Command.h"
+#include "GlobalData.h"
 #include <string>
 
-using namespace std;
-
+/****************************************************************
+* Class Name: ConnectCommand                                    *
+* Constructor: Pointer to GlobalData                            *
+* Class Functionality: This class is used to connect the client *
+*   socket at their IP address with the server socket.          *
+****************************************************************/
 class ConnectCommand : public Command {
-    string m_IP, m_port;
+    GlobalData* m_globalData; // member
 public:
-    void execute(vector<string> line) override;
-    void store(vector<string> line) override;
-    void openClient();
+    explicit ConnectCommand(GlobalData *globalData); // constructor
+    int execute(vector<string> script, unsigned long index) override;
+
 };
 
 

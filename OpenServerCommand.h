@@ -1,17 +1,20 @@
 #ifndef PROJECT_OPENSERVERCOMMAND_H
 #define PROJECT_OPENSERVERCOMMAND_H
-
+#include "DataReaderServer.h"
 #include "Command.h"
+#include "GlobalData.h"
 #include <string>
 
-using namespace std;
-
+/****************************************************************
+* Class Name: OpenServerCommand                                 *
+* Constructor: Pointer to GlobalData                            *
+* Class Functionality: Opens the server socket and runs it.     *
+****************************************************************/
 class OpenServerCommand : public Command {
-    string m_port, m_freq;
+    GlobalData* m_globalData; // member
 public:
-    void execute(vector<string> line) override;
-    void store(vector<string> line) override;
-    void openServer();
+    explicit OpenServerCommand(GlobalData *data); // constructor
+    int execute(vector<string> script, unsigned long index) override; // open the server socket to run in background
 };
 
 

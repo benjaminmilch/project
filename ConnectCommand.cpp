@@ -3,22 +3,20 @@
 #include <iostream>
 #include "Client.h"
 
-void ConnectCommand::execute(vector<string> line)
+ConnectCommand::ConnectCommand(GlobalData *globalData)
+{
+    m_globalData = globalData;
+}
+int ConnectCommand::execute(vector<string> script, unsigned long index)
 {
     ValidateNumbers validator;
-    if (validator.validateNumbers(m_port) && validator.validateIP(m_IP)) {
+    if (validator.validateNumbers(script[index + 2]) && validator.validateIP(script[index + 1])) {
         // port and socket are valid, need to connect client from socket to port
-        openClient();
+        Client client = Client(script[index + 1].c_str(), stoi(script[index + 2]), m_globalData);
+        client.connectToServer();
     } else {
         std::cout << "Syntax Error: Socket or Port received invalid input" << std::endl;
     }
+    return 4;
 }
-void ConnectCommand::store(vector<string> line)
-{
-    m_IP.append(line[1]);
-    m_port.append(line[2]);
-}
-void ConnectCommand::openClient()
-{
 
-}
